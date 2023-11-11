@@ -1,0 +1,25 @@
+.main__Items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    margin: auto;
+}
+
+.smartphone, .login{
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+@media(max-width: 874px){
+    .main__Items{
+        height: 78vh;
+    }
+}
+
+@media(max-width: 874px) and (max-height: 500px){
+    .main__Items{
+        height: 390px;
+    }
+}

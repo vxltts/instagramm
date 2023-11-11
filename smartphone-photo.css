@@ -1,0 +1,35 @@
+.smartphone{
+    background-image: url(../assets/smartphone.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 595px;
+    min-width: 465px;
+}
+
+.images{
+    position: relative;
+}
+
+.images img{
+    position: absolute;
+    left: 155px;
+    top: 27px;
+    min-height: 536px;
+
+    opacity: 0;
+    transition: opacity 2000ms;
+}
+
+.images img.selected{
+    opacity: 1;
+}
+
+.displayNone{
+    display: none;
+}
+
+@media (max-width: 875px){
+    .smartphone{
+        display: none;
+    }
+}
